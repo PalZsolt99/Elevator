@@ -1,0 +1,36 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding: 20px;
+}
+
+.element {
+  text-align: center;
+  float: left;
+  display: inline;
+  width: 30%;
+}
+
+.row {
+  text-align: center;
+  background-color: grey;
+  border-style: solid;
+  height: 50%;
+}
+
+.currentFloorRow {
+  height: 2em;
+  width: 72%;
+}
+
+.col {
+  border-style: solid;
+}
+
+.col2 {
+  border-style: hidden;
+}
