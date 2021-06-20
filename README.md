@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+Elevator project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+At the start of the project it can be see a building with 2 elevators and 7 floors.
+There is also 2 bars with floor numbers, which are assigned to the appropriate elevators (A and B).
+In the 3rd column in the building it can be see UP and DOWN arrows which are responsible for
+calling the elevators to the right destination.
+By clicking on any of these arrows, the nearest elevator will be appear on that floor.
+If the distance is equal between the elevators and the destination, the lift from the lower floor comes up.
+By clicking on floor numbers, the appropriate elevator will come up or go down to the assigned floor.
+Above the arrows on each floor, it is displayed which elevator is moving. Besides that, on the top of the
+building is appearing the elevator's current state.
 
-## Available Scripts
+In "ElevatorComponent" class it's created the floor numbers and there is stored the current state of elevators
+(currentFloor). In the "retrieveCurrentFloor" function it's sent the "currentFloor" to the Buliding class.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In "Building" class it's created the building and all of its components. In the "floorDataA" and "floorDataB"
+functions are moved the elevators by floor numbers, and in the "onClick" are moved by arrows. In the last one
+is written the decision, which elevator is going up/down at the same distance.
